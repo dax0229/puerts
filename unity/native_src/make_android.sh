@@ -1,16 +1,20 @@
-if [ -n "$ANDROID_NDK" ]; then
-    export NDK=${ANDROID_NDK}
-elif [ -n "$ANDROID_NDK_HOME" ]; then
-    export NDK=${ANDROID_NDK_HOME}
-else
-    export NDK=~/android-ndk-r21b
-fi
+# if [ -n "$ANDROID_NDK" ]; then
+#     export NDK=${ANDROID_NDK}
+# elif [ -n "$ANDROID_NDK_HOME" ]; then
+#     export NDK=${ANDROID_NDK_HOME}
+# else
+#     export NDK=~/android-ndk-r21b
+# fi
+
+export ANDROID_NDK=~/android-ndk-r21b
+export ANDROID_NDK_HOME=~/android-ndk-r21b
+export NDK=~/android-ndk-r21b
 
 echo "ANDROID_NDK: $ANDROID_NDK" 
 echo "ANDROID_NDK_HOME: $ANDROID_NDK_HOME" 
 echo "NDK: $NDK" 
 
-export ANDROID_NDK = ~/android-ndk-r21b
+export ANDROID_NDK=~/android-ndk-r21b
 
 if [ ! -d "$NDK" ]; then
     echo "Please set ANDROID_NDK environment to the root of NDK."
