@@ -33,6 +33,7 @@ jobs:
           wget -O NDK -q https://dl.google.com/android/repository/android-ndk-r21b-linux-x86_64.zip
           sudo apt install unzip -y
           unzip -q NDK
+          chmod -R 777 ~/android-ndk-r21b
           export ANDROID_NDK=~/android-ndk-r21b
       - name: Build
         run: |
