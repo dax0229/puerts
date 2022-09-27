@@ -13,7 +13,7 @@ on:
 
 env:
   RUNID: 613573412
-  BACKEND_URL: https://github.com/puerts/backend-v8/releases/download/V8_9.4.146.24_0817/v8_bin_9.4.146.24.tgz
+  BACKEND_URL: https://github.com/puerts/backend-v8/releases/download/V8_8.4.371.19_220808/v8_bin_8.4.371.19.tgz
 
 jobs:
   android:
