@@ -6,6 +6,12 @@ else
     export NDK=~/android-ndk-r21b
 fi
 
+echo "ANDROID_NDK: $ANDROID_NDK" 
+echo "ANDROID_NDK_HOME: $ANDROID_NDK_HOME" 
+echo "NDK: $NDK" 
+
+export ANDROID_NDK = ~/android-ndk-r21b
+
 if [ ! -d "$NDK" ]; then
     echo "Please set ANDROID_NDK environment to the root of NDK."
     exit 1
