@@ -96,10 +96,10 @@ jobs:
       - name: wget released artifact
         shell: powershell
         run: |
-        cd unity\native_src
-        Invoke-WebRequest '${{ env.BACKEND_URL }}' -O backend
-        tar -xzf backend
-        del backend
+          cd unity\native_src
+          Invoke-WebRequest '${{ env.BACKEND_URL }}' -O backend
+          tar -xzf backend
+          del backend
       - name: Build
         run: |
           cd unity\native_src
